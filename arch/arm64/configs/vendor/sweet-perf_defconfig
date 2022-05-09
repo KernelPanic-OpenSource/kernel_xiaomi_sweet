@@ -683,7 +683,7 @@ CONFIG_ESOC_MDM_4x=y
 CONFIG_ESOC_MDM_DRV=y
 CONFIG_ESOC_MDM_DBG_ENG=y
 CONFIG_MSM_TZ_LOG=y
-CONFIG_ANDROID_BINDER_DEVICES="binder,hwbinder,vndbinder,puddlejumper,vndpuddlejumper,hwpuddlejumper,anbox-binder,anbox-hwbinder,anbox-vndbinder"
+CONFIG_ANDROID_BINDER_DEVICES="binder,hwbinder,vndbinder,anbox-binder,anbox-hwbinder,anbox-vndbinder"
 CONFIG_EXT4_FS=y
 CONFIG_EXT4_FS_SECURITY=y
 CONFIG_EXT4_ENCRYPTION=y
@@ -1039,3 +1039,9 @@ CONFIG_CGROUP_NET_PRIO=y
 CONFIG_IP6_NF_TARGET_MASQUERADE=y 
 CONFIG_NF_NAT_IPV6=y
 CONFIG_NF_NAT_IPV4=y
+CONFIG_BINFMT_MISC=y
+
+# Wireguard
+CONFIG_NET_UDP_TUNNEL=y
+CONFIG_CRYPTO_ALGAPI=y
+CONFIG_WIREGUARD=y
